@@ -6,7 +6,7 @@ data class ApiResponse(
     val payload: Payload,
 )
 
-data class UserResponse(val success: Boolean, val user: User?)
+data class UserResponse(val success: User, val user: User?)
 
 data class PayLoadResponse(val success: Boolean,val payload: Payload?)
 

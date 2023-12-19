@@ -69,7 +69,7 @@
     </TextView>
 
     <LinearLayout
-
+        android:id="@+id/listbut"
         android:layout_width="413dp"
         android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -203,6 +203,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <ImageButton
+            android:id="@+id/mainbut"
             android:onClick="main_click"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -222,6 +223,7 @@
         </ImageButton>
 
         <ImageButton
+            android:id="@+id/collbut"
             android:onClick="prof_coll_click"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

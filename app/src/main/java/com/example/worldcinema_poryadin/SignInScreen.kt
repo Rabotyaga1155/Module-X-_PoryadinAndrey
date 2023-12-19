@@ -14,7 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class SignInScreen : AppCompatActivity() {
 
-    private val apiService:ApiService by lazy {
+    val apiService:ApiService by lazy {
         Retrofit.Builder()
             .baseUrl("https://virtserver.swaggerhub.com/focus.lvlup2021/LEVEL_UP_MOBILE/1.0.0/") // IP Comp
             .addConverterFactory(GsonConverterFactory.create())
@@ -24,7 +24,7 @@ class SignInScreen : AppCompatActivity() {
 
 
     private lateinit var password:EditText
-    private lateinit var email:EditText
+    lateinit var email:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in_screen)
